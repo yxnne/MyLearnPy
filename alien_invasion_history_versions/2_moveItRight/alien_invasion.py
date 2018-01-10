@@ -17,7 +17,7 @@ def run_game():
     pygame.display.set_caption("外星人入侵啦")
 
     # 创建飞船
-    ship = Ship(ai_settings, screen)
+    ship = Ship(screen)
 
     # 开始游戏的主循环
     while True:
@@ -27,8 +27,7 @@ def run_game():
 
         # 监听键盘和鼠标
         gf.check_events(ship)
-        # ship更新下自己的状态
-        ship.update()
+
         # 绘制最新更新屏幕
         gf.update_screen(ai_settings, screen, ship)
 

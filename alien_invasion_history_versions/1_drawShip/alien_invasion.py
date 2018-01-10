@@ -32,7 +32,7 @@ def run_game():
 
         # 绘制最新更新屏幕
         screen.fill(ai_settings.bg_color)
-        ship.blitme()
+        # ship.blitme()
 
         pygame.display.flip()
 

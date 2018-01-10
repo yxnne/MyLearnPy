@@ -9,18 +9,10 @@ def check_events(ship):
         if event.type == pygame.QUIT:  # pygame.QUIT 其实就是小叉叉
             sys.exit()
 
-        # 调整思路了，结合Key down 和 up 事件，实现连续不松手移动
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
-                ship.moving_right = True
-            elif event.key == pygame.K_LEFT:
-                ship.moving_left = True
-
-        elif event.type == pygame.KEYUP:
-            if event.key == pygame.K_RIGHT:
-                ship.moving_right = False
-            elif event.key == pygame.K_LEFT:
-                ship.moving_left = False
+                # 向右
+                ship.rect.centerx += 1
 
 
 def update_screen(ai_settings, screen, ship):
