@@ -18,5 +18,5 @@ import easygui as g
 # g.msgbox('you say ' + say)
 
 # integerbox() 为用户提供一个简单的输入框，用户只能输入范围内（lowerbound参数设置最小值，upperbound参数设置最大值）的整型数值，否则会要求用户重新输入。
-# g.integerbox(msg='输入下值把吧', title='Guess', default=0, lowerbound=0, upperbound=99)
+g.integerbox(msg='输入下值把吧', title='Guess', default=0, lowerbound=0, upperbound=99)
 
