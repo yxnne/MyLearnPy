@@ -27,3 +27,14 @@ print('并集', set1 | set2)
 
 
 print(my_abs(-24))
+
+dic ={"name":'yxmm'}
+
+for k in dic:
+    print("dic k-v is " + dic[k])
+
+for k in dic.keys():
+    print("k is "+ k)
+
+for v in dic.values():
+    print("v is " + v)
