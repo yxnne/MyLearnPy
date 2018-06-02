@@ -38,3 +38,19 @@ for k in dic.keys():
 
 for v in dic.values():
     print("v is " + v)
+
+# declear dictionary
+
+d = {} # empty dictionary
+
+d['name'] = 'yxnne'
+
+d['age'] = 20
+
+d['del'] = 'fake'
+
+print('d ->' + str(d))
+
+del d['del']
+
+print('d ->' + str(d))
